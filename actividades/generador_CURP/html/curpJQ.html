@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<title>curp</title>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript"   src="../JQ/curpjquery.js"></script>
+		<link rel="stylesheet" type="text/css" href="../CSS/estilos.css">
+		
+
+	</head>
+
+	<body>
+		<form>
+			<center><p>HTML y jQuey</p></center>
+			<center>
+				<table border="1">
+					<tr>
+						<td><b><div id="mostrar_curp"></div></b></td>
+					</tr>
+				</table>
+			</center>
+			<center><h2>Curp</h2></center>
+		    Nombres:<br>
+		  	<input type="text"  id="txt_nombre" placeholder="Ejemplo José-Manuel si son dos nombres"><br>
+		  	Apellido Paterno:<br>
+		  	<input type="text" id="txt_paterno"  placeholder="Escribe tu primer apellido"><br>
+		  	Apellido Materno:<br>
+		  	<input type="text" name="txt_materno" 	id="txt_materno" placeholder="Escribe tu segundo apellido"><br>
+			<table border="1">
+				<tbody>
+					<tr>
+						<th>Hombre<input type="radio" name="txt_genero" id="txt_genero" value="H" ></th>
+					</tr>
+					<tr>
+						<th>Mujer<input type="radio" name="txt_genero" id="txt_genero" value="M" ></th>
+					</tr>
+				</tbody>
+			</table>
+			<br>
+			Fecha de Nacimiento:<br>
+			<input type="text" name="txt_nacimiento" id="txt_nacimiento" placeholder="DD/MM/AAAA"><br>
+
+			Entidad Federativa:<br>
+			<select name="txt_estado" id="txt_estado">
+				<option value="GT">Guanajuato</option>
+				<option value="OC">Oaxaca</option>
+				<option value="JC">Jalisco</option>
+				<option value="NL">Nuevo León</option>
+				<option value="CM">Colima</option>
+				<option value="DG">Durango</option>
+				<option value="GR">Guerrero</option>
+				<option value="HG">Hidalgo</option>
+				<option value="DF">México</option>
+			</select>
+			
+			<br>
+			<br>
+			<input type="button" id="btn_boton" class="boton" value="Enviar">
+		
+		</form> 
+		
+	</body>
+</html>

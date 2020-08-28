@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!--<script type="text/javascript"   src="JQ/test.js"></script> -->
+	<style type="text/css">
+		body{
+			background: #B7EDD4;
+		}
+		
+		h2{
+			text-align: center;
+		}
+		.cajaPrincipal{
+			margin:0px 200px 0px 200px;
+			background-color: #E3862D;
+			border: solid;
+			font-size: 25px;
+		}
+
+		.botones{
+			width: 25%;
+			padding: 10px;
+			margin:0px 0px 0px 350px;
+			background-color: #68A1EE;
+			font-size: 20px;
+			cursor: pointer;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing:border-box;
+			box-sizing: border-box;
+		}
+		/*eventos del mouse*/
+		.div1:hover,.div2:hover,.div3:hover,.div4:hover,.div5:hover,.div6:hover,
+		.div7:hover,.div8:hover,.div9:hover,.div10:hover{
+			background-color: #68A1EE;
+		}
+
+		/*seleccion del cursor al pasar el mause*/
+		.div1,.div2,.div3,.div4,.div5,.div6,.div7,.div8,.div9,.div10{
+			border: groove;
+			border-radius: 5px;
+			border-color: red;
+			cursor: pointer;
+		}
+		/*div seleccion de preguntas*/
+		#num1,#num2,#num3,#num4,#num5,#num6,#num7,#num8,#num9,#num10{
+			display: none;
+		}
+
+	</style>
+	
+	<script>
+		/*efecto desplegable en las preguntas*/
+		$(document).ready(function(){
+			$(".div1").click(function(){
+				$("#num1").slideToggle("slow");
+			});
+			$(".div2").click(function(){
+		    	$("#num2").slideToggle("slow");
+			});
+			$(".div3").click(function(){
+		    	$("#num3").slideToggle("slow");
+			});
+			$(".div4").click(function(){
+		    	$("#num4").slideToggle("slow");
+			});
+			$(".div5").click(function(){
+		    	$("#num5").slideToggle("slow");
+			});
+			$(".div6").click(function(){
+		    	$("#num6").slideToggle("slow");
+			});
+			$(".div7").click(function(){
+		    	$("#num7").slideToggle("slow");
+			});
+			$(".div8").click(function(){
+		    	$("#num8").slideToggle("slow");
+			});
+			$(".div9").click(function(){
+		    	$("#num9").slideToggle("slow");
+			});
+			$(".div10").click(function(){
+		    	$("#num10").slideToggle("slow");
+			});
+		});
+	</script>
+
+</head>
+<body>
+	<form class="cajaPrincipal" action="php/cuestionario.php" method="post" >
+		<h2>Cuestionario html</h2>
+		<br>
+		<div class="div1">1. Para definir el fondo de la página se utiliza:</div>
+		<div id="num1">
+		<input type="radio" class="1-0" id="1" name="1" value="error">&ltFONT COLOR="RED"&gtlos guardianes azules &lt/font&gt<br>
+		<input type="radio" class="1-1" id="1" name="1" value="error">&ltFONT SIZE="1"&gtcada día seré mejor &lt/FONT&gt<br>
+		<input type="radio" class="1-2" id="1" name="1" value="error">&ltp align="center"&gtla mejor musica&lt/p&gt<br>
+		<input type="radio" class="1-3" id="1" name="1" value="bien">&ltbody bg color=”#00ff00”&gt
+		</div>
+		<br><br>
+		<div class="div2">2. En el body se puede:<br></div>
+		<div id="num2">
+ 		<input type="radio" class="2-0" id="2" name="2" value="bien">Insertar imágenes, texto, tablas y fondos<br>
+		<input type="radio" class="2-1" id="2" name="2" value="error">Generar solo formularios, enlaces y videos<br>
+ 		<input type="radio" class="2-2" id="2" name="2" value="error">Solamente se define el titulo<br>
+ 		<input type="radio" class="2-3" id="2" name="2" value="error">Respuestas a y b
+		</div>
+		<br><br>
+		<div class="div3">3. ¿Qué entiende por HTML?<br></div>
+		<div id="num3">
+		 <input type="radio" class="3-0" id="3" name="3" value="error">Hyper Text Mask Language<br>
+		 <input type="radio" class="3-1" id="3" name="3" value="error">Hard Text Markup Language<br>
+		 <input type="radio" class="3-2" id="3" name="3" value="bien">Hyper Text Markup Language<br>
+		 <input type="radio" class="3-3" id="3" name="3" value="error">Hiper Type Markup Language
+		</div> 
+		 <br><br>
+		<div class="div4">4. ¿Qué etiqueta utilizamos para definir el cuerpo del documento?<br></div>
+		<div id="num4">
+		 <input type="radio" class="4-0" id="4" name="4" value="error">background<br>
+		 <input type="radio" class="4-1" id="4" name="4" value="bien">body<br>
+		 <input type="radio" class="4-2" id="4" name="4" value="error">b<br>
+		 <input type="radio" class="4-3" id="4" name="4" value="error">big
+		</div>
+		 <br><br>
+		<div class="div5">5. ¿Qué etiqueta utilizamos para insertar una línea horizontal?<br></div>
+		<div id="num5">
+		 <input type="radio" class="5-0" id="5" name="5" value="error">br<br>
+		 <input type="radio" class="5-1" id="5" name="5" value="bien">hr<br>
+		 <input type="radio" class="5-2" id="5" name="5" value="error">line<br>
+		 <input type="radio" class="5-3" id="5" name="5" value="error">wbr
+		</div>
+		 <br><br>
+		<div class="div6">6. ¿Cuál es la forma correcta de insertar un comentario?<br></div>
+		<div id="num6">
+		<input type="radio" class="6-0" id="6" name="6" value="bien">&lt!--...--&gt<br>
+		 <input type="radio" class="6-1" id="6" name="6" value="error"><¡--...--!><br>
+		 <input type="radio" class="6-2" id="6" name="6" value="error">&ltcomment&gt<br>
+		 <input type="radio" class="6-3" id="6" name="6" value="error">&ltmeta&gt
+		</div>
+		 <br><br>
+		<div class="div7">7. Elija la etiqueta apropiada para un texto en negrita.<br></div>
+		<div id="num7">
+		<input type="radio" class="7-0" id="7" name="7" value="error">bold<br>
+		 <input type="radio" class="7-1" id="7" name="7" value="error">bb<br>
+		 <input type="radio" class="7-2" id="7" name="7" value="bien">b<br>
+		 <input type="radio" class="7-3" id="7" name="7" value="error">big
+		</div>
+		<br><br>
+		<div class="div8">8. Elija la forma correcta de ingresar una imagen.<br></div>
+		<div id="num8">
+		<input type="radio" class="8-0" id="8" name="8" value="bien">&ltimg src="foto.jpg"&gt<br>
+		 <input type="radio" class="8-1" id="8" name="8" value="error">&ltimagen src="foto.jpg"&gt<br>
+		 <input type="radio" class="8-2" id="8" name="8" value="error">&ltimg href="foto.jpg"&gt<br>
+		 <input type="radio" class="8-3" id="8" name="8" value="error">&ltbackground src="foto.jpg"&gt
+		</div>
+		 <br><br>
+		<div class="div9">9. ¿Qué etiqueta define un salto de línea?<br></div>
+		<div id="num9">
+		<input type="radio" class="9-0" id="9" name="9" value="bien">br<br>
+		 <input type="radio" class="9-1" id="9" name="9" value="error">break<br>
+		 <input type="radio" class="9-2" id="9" name="9" value="error">linebreak<br>
+		 <input type="radio" class="9-3" id="9" name="9" value="error">p
+		</div>
+		 <br><br>
+		<div class="div10">10. Elija la etiqueta que nos dá el título más grande<br></div>
+		<div id="num10">
+		<input type="radio" class="10-0" id="10" name="10" value="bien">h1<br>
+		 <input type="radio" class="10-1" id="10" name="10" value="error">h6<br>
+		 <input type="radio" class="10-2" id="10" name="10" value="error">head<br>
+		 <input type="radio" class="10-3" id="10" name="10" value="error">big
+		</div>
+
+		<br><br>
+		<input type="submit" class="botones" id="btn_php" name="btn_php" value="php">
+		<br><br>
+		<!--<input type="button" class="botones" id="btn_jquery" value="jQuery">
+		<br><br>-->
+		<center>
+			<div id="puntos_acomulados"><br></div>
+		</center>
+		<br>
+		<center>
+			<div id="calificacion"><br></div>
+		</center>
+	</form>
+	
+</body>
+</html>
