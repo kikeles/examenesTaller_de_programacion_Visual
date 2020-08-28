@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript"   src="faltas.js" ></script>
+		<link rel="stylesheet" type="text/css" href="../examen_primer_parcial/vista.css">
+	</head>
+	<body>
+		<form id="seccion_1">
+			<center><h3>Sección 1</h3></center>
+			Materia:<input type="text" id="txt_materia" onkeyup="habilitar_boton_1()"><br>
+			Horas por semana:<input type="text" id="txt_hora" onkeyup="habilitar_boton_1()" ><br>
+			<table border="1">
+				<tr>
+					<th>Semestre<input type="radio" name="radio_boton" id="radio_boton" value="semestre"  checked></th>
+				</tr>
+				<tr>
+					<th>Cuatrimestre<input type="radio" name="radio_boton" id="radio_boton" value="cuatrimestre"><br></th>
+				</tr>
+			</table>
+			<br>	
+			<input type="button" id="btn_siguiente_1" class="boton" value="siguiente -->>" disabled>
+		</form>	
+
+
+
+
+		<form id="seccion_2">
+		<center><h3>Sección 2</h3></center>
+		<table border="1">
+			<tr>
+				<th colspan="2">Selecciona el ciclo</th>
+			</tr>
+			<tr>
+				<th>Ciclo A<input type="radio" name="radio_ciclo" id="radio_ciclo"  value="ciclo A" checked></th>
+				<th>Ciclo B<input type="radio" name="radio_ciclo" id="radio_ciclo" value="ciclo B" ></th>
+			</tr>
+			<tr>
+				<th>
+					Marzo:<input type="text" id="txt_marzo" disabled><br>
+					Abril:<input type="text" id="txt_abril" disabled><br>
+					Mayo:<input type="text" id="txt_mayo" disabled><br>
+				    Junio:<input type="text" id="txt_junio" disabled><br>
+					Julio:<input type="text" id="txt_julio" disabled><br>
+					Agosto:<input type="text" id="txt_agosto" disabled><br>
+				</th>
+				<th>
+					Septiembre:<input type="text" id="txt_septiembre" disabled><br>
+					Octubre:<input type="text" id="txt_octubre" disabled><br>
+					Noviembre:<input type="text" id="txt_noviembre" disabled><br>
+					Diciembre:<input type="text" id="txt_diciembre" disabled><br>
+					Enero:<input type="text" id="txt_enero" disabled><br>
+					Febrero:<input type="text" id="txt_febrero" disabled><br>
+				</th>
+			</tr>
+			<tr>
+				<th><input type="button" name="btn_calcular_faltas" class="boton" id="btn_calcular_faltas" value="Calcular" disabled></th>
+				<th><div id="mostrar_faltas"></div></th>
+			</tr>
+		</table>
+		
+	</form>
+	<form id="seccion_3">
+		<center><h3>Sección 3</h3></center>
+		Ingresa tu calificacion por parcial...<br>
+		Primer parcial:<input type="text" id="txt_parcial_1" disabled><br>
+		Segundo parcial:<input type="text" id="txt_parcial_2" disabled><br>
+		Tercer parcial:<input type="text" id="txt_parcial_3" disabled><br>
+		<div id="mostrar_calificacion"></div>
+		<br>
+		<input type="button" class="boton" name="btn_calcular_promedio" id="btn_calcular_promedio" value="Calcular" disabled><br>
+	</form>
+	</body>
+</html>
